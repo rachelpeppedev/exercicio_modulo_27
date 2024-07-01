@@ -32,9 +32,10 @@ watchEffect( () => {
 </script>
 
 <template>
-  <div class="container"></div>
-  <Cabecalho: resultado = "resultado()" />
-  <Calculadora: estado.resultado = "estado.resultado = estado.primeiroNumero + estado.segundoNumero"/>
+  <div class="container">
+    <Cabecalho: estado.resultado = "resultado()" />
+    <Calculadora: estado.resultado = "estado.resultado = estado.primeiroNumero + estado.segundoNumero"/>
+  </div>
 </template>
 
 <style scoped>
